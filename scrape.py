@@ -24,7 +24,7 @@ def scrape_website(website, scrolls: int = 0):
         if scrolls > 0:
             scroll_count = 0
             text = f"total scrolls: {scrolls}\n"
-            with open("scroll_counter.txt", "a") as text_file:
+            with open("output/scroll_counter.txt", "a") as text_file:
                     text_file.write(text)
             # Simulate scroll events to load additional content
             while scroll_count <= int(scrolls):
@@ -35,7 +35,7 @@ def scrape_website(website, scrolls: int = 0):
                 body_content = extract_body_content(driver.page_source)
                 cleaned_content = clean_body_content(body_content)
 
-                with open("scroll_counter.txt", "a") as text_file:
+                with open("output/scroll_counter.txt", "a") as text_file:
                     text = f"\ncurrent scroll: {scroll_count}"
                     text_file.write(text)
 

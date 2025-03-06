@@ -25,7 +25,7 @@ if (st.button("Scrape Site")) and (scrolls > 0):
     # with st.expander("View DOM Content"):
     #     st.text_area("DOM Content", cleaned_content, height=300)
 
-    with open("cleaned_content.txt", "w") as text_file:
+    with open("output/cleaned_content.txt", "w") as text_file:
         text_file.write(result)
 
     
