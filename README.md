@@ -46,6 +46,8 @@ A compact web-scraping tool for local machines written in Python with Selenium a
 - Choose and pull a model (e.g. llama3.2):
 ```ollama pull llama3.2```
 - Edit parse.py to reference your chosen model name for AI-assisted parsing.
+- for testing or local use you can also invoke your model in the terminal:
+```ollama run llama3.2```
 
 ## Usage
 1. **Run the Streamlit app**
